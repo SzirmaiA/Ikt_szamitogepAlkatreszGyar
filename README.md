@@ -1,0 +1,1 @@
+# Ikt_szamitogepAlkatreszGyar
