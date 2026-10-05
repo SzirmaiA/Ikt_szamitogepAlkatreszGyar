@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: #0d1117;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background-color: #0d1117;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #00d2ff 0%, #0056b3 100%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.logo span {
+  font-size: 11px;
+  color: #8b949e;
+  display: block;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  gap: 35px;
+  font-size: 15px;
+}
+
+nav a {
+  color: #8b949e;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+nav a.active, nav a:hover {
+  color: #ffffff;
+}
+
+.cta-button {
+  background-color: #00d2ff;
+  color: #0d1117;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+  background-color: #00b8e6;
+}
+
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px 60px 80px 60px;
+  align-items: center;
+  min-height: 600px;
+}
+
+.hero-content {
+  z-index: 2;
+  max-width: 600px;
+}
+
+.tag {
+  color: #00d2ff;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tag::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #00d2ff;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.hero-content p {
+  color: #8b949e;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 35px;
+}
+
+.btn-primary {
+  background-color: #00d2ff;
+  color: #0d1117;
+  padding: 14px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #30363d;
+  padding: 14px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.badges {
+  display: flex;
+  gap: 12px;
+}
+
+.badge {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  color: #8b949e;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.hero-image-container {
+  position: relative;
+  justify-self: end;
+  width: 100%;
+  max-width: 700px;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 8px;
+  opacity: 0.85;
+}
+
+.stat-box {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background-color: rgba(13, 17, 23, 0.9);
+  border: 1px solid #30363d;
+  padding: 20px;
+  border-radius: 6px;
+  backdrop-filter: blur(10px);
+  width: 260px;
+}
+
+.stat-box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  color: #8b949e;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.stat-box-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.progress-bars {
+  display: flex;
+  gap: 3px;
+}
+
+.bar {
+  flex: 1;
+  height: 6px;
+  background-color: #21262d;
+  border-radius: 1px;
+}
+
+.bar.active {
+  background-color: #00d2ff;
+}
+
+.stats-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #21262d;
+  padding: 50px 60px;
+  background-color: #ffffff;
+  color: #0d1117;
+}
+
+.stat-item {
+  padding: 0 20px;
+  border-right: 1px solid #e1e4e8;
+}
+
+.stat-item:last-child {
+    border-right: none;
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.stat-number span {
+  font-size: 18px;
+  color: #00bcd4;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #57606a;
+}
