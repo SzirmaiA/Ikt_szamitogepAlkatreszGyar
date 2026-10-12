@@ -6,9 +6,10 @@
 }
 
 body {
-  background-color: #0d1117;
+  background-color: #1B1F27;
   color: #ffffff;
   overflow-x: hidden;
+  
 }
 
 header {
@@ -60,21 +61,27 @@ nav a.active, nav a:hover {
 }
 
 .cta-button {
-  background-color: #00d2ff;
-  color: #0d1117;
-  padding: 12px 24px;
+  min-width: 160px;
+  min-height: 52px;
+  padding: 0 22px;
   border-radius: 4px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 14px;
   display: flex;
   align-items: center;
-  gap: 8px;
-  transition: background-color 0.2s;
+  justify-content: center;
+  gap: 16px;
+  background: var(--cyan);
+  color: #081217;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  
 }
 
 .cta-button:hover {
-  background-color: #00b8e6;
+  background: #18d1dc; 
+  
+  box-shadow: 0 0 15px #18d1dc, 0 0 30px rgba(24, 209, 220, 0.6);
 }
 
 .hero {
@@ -155,19 +162,26 @@ h1 {
   font-size: 14px;
 }
 
-.badges {
+.hero-badges {
   display: flex;
   gap: 12px;
 }
 
-.badge {
-  background-color: #161b22;
-  border: 1px solid #30363d;
-  color: #8b949e;
-  padding: 6px 12px;
-  border-radius: 4px;
-  font-size: 12px;
-  font-weight: 600;
+.hero-badges{
+  margin-top:30px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.hero-badges li{
+  padding:7px 10px;
+  border:1px solid rgba(0,194,209,.45);
+  border-radius:4px;
+  color:#6ee5ed;
+  background:rgba(0,194,209,.04);
+  font-size:10px;
+  font-weight:700;
 }
 
 .hero-image-container {
@@ -262,4 +276,49 @@ h1 {
 .stat-label {
   font-size: 14px;
   color: #57606a;
+}
+.stability-chart{
+  height:26px;
+  margin-top:10px;
+  background:
+    linear-gradient(to top,#566173 0 34%,transparent 34%) 0 100%/14px 100% no-repeat,
+    linear-gradient(to top,#566173 0 37%,transparent 46%) 20px 100%/14px 100% no-repeat,
+    linear-gradient(to top,#566173 0 49%,transparent 41%) 40px 100%/14px 100% no-repeat,
+    linear-gradient(to top,#657084 0 58%,transparent 58%) 60px 100%/14px 100% no-repeat,
+    linear-gradient(to top,#657084 0 64%,transparent 64%) 80px 100%/14px 100% no-repeat,
+    linear-gradient(to top,#657084 0 70%,transparent 70%) 100px 100%/14px 100% no-repeat,
+    linear-gradient(to top,#657084 0 76%,transparent 76%) 120px 100%/14px 100% no-repeat,
+    linear-gradient(to top,#657084 0 82%,transparent 82%) 140px 100%/14px 100% no-repeat,
+    linear-gradient(to top,#00C2D1 0 86%,transparent 86%) 160px 100%/14px 100% no-repeat,
+    linear-gradient(to top,#00C2D1 0 92%,transparent 92%) 180px 100%/14px 100% no-repeat,
+    linear-gradient(to top,#00C2D1 0 99.98%,transparent 96%) 200px 100%/14px 100% no-repeat;
+}
+.hero-buttons a:first-child{
+  min-width:225px;
+  border-color:var(--cyan);
+  background:var(--cyan);
+  color:#081217;
+  transition: background 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.hero-buttons a:first-child:hover{
+    background: #18d1dc; /* Added missing semicolon */
+  
+  /* The glow effect matching your hover color */
+  box-shadow: 0 0 15px #18d1dc, 0 0 30px rgba(24, 209, 220, 0.6);
+}
+.hero-buttons a:last-child:hover{background:#232a34}
+
+
+ul{margin:0;padding:0;list-style:none}
+
+.main-nav .active::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:26px;
+  width:20px;
+  height:2px;
+  background-color: #00d2ff;
+  transform:translateX(-50%);
 }
