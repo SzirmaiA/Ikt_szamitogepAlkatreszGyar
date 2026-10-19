@@ -18,7 +18,7 @@
   </div>
   <nav class="main-nav">
     <a href="" class="active">Főoldal</a>
-    <a href="termekek.html">Termékek</a>
+    <a href="#termekek">Termékek</a>
     <a href="">Rólunk</a>
     <a href="">Gyártás</a>
     <a href="">Kapcsolat</a>
@@ -33,10 +33,10 @@
       <h1>Nagy teljesítmény.<br>Mérnöki pontosság.</h1>
       <p>Prémium számítógép-alkatrészek ipari megbízhatósággal a tervezőasztaltól a végső terheléses tesztig.</p>
       <div class="hero-buttons">
-        <a href="termekek.html" class="btn-primary" style="background-color: #00d2ff;">Termékek felfedezése ↗</a>
-        <a href="rolunk.html" class="btn-secondary">Ismerjen meg minket↗</a>
+        <a href="#termekek" class="btn-primary" style="background-color: #00d2ff;">Termékek felfedezése ↗</a>
+        <a href="rolunk.html" class="btn-secondary">Ismerjen meg minket <span>↗</span></a>
       </div>
-          <ul class="hero-badges">
+          <ul class="hero-badges" style="list-style: none;">
             <li>ISO 9001</li>
             <li>100% TERHELÉSTESZT</li>
             <li>EU GYÁRTÁS</li>
@@ -75,17 +75,54 @@
     <div class="stat-label">aktív partnerhálózat</div>
   </div>
 </section>
-<br>
-<br>
-<br>
-  <section class="hero">
-    <div class="hero-content">
-      <div class="tag">Termékportfólió</div>
-      <h1>Komponensek<br>kompromisszumok nélkül</h1>
-      <p>Egymásra hangolt hardvercsaládok professzionális munkaallomásokhoz, játékra és üzleti rendszerekhez.</p>
+
+  <section class="portfolio" id="termekek">
+    <div class="portfolio-heading">
+      <div>
+        <div class="tag">Termékportfólió</div>
+        <h2>Komponensek<br>kompromisszumok nélkül</h2>
+        <p>Egymásra hangolt hardvercsaládok professzionális munkaállomásokhoz, játékra és üzleti rendszerekhez.</p>
+      </div>
+      <a href="termekek.html" class="btn-secondary portfolio-button">Minden termék <span>↗</span></a>
     </div>
-    <div class="hero-termekek-button">
-        <a href="rolunk.html" class="btn-secondary">Minden termék ↗</a>
+
+    <div class="product-grid">
+      <article class="product-card">
+        <img src="img/alaplapok.png" alt="Alaplap" loading="lazy">
+        <div class="product-info">
+          <div class="product-title"><h3>Alaplapok</h3></div>
+          <p>Stabil tápellátás, fejlett csatlakozás és hosszú távú bővíthetőség.</p>
+          <div class="product-tags"><span>DDR5</span><span>PCIE 5.0</span></div>
+          <a href="termekek.html">Részletek&nbsp; →</a>
+        </div>
+      </article>
+      <article class="product-card">
+        <img src="img/processzorok.png" alt="Processzor" loading="lazy">
+        <div class="product-info">
+          <div class="product-title"><h3>Processzorok</h3></div>
+          <p>Nagy órajel, intelligens terheléskezelés és kimagasló energiahatékonyság.</p>
+          <div class="product-tags"><span>16 MAG</span><span>5.4 GHZ</span></div>
+          <a href="termekek.html">Részletek&nbsp; →</a>
+        </div>
+      </article>
+      <article class="product-card">
+        <img src="img/tapegysegek.png" alt="Tápegység" loading="lazy">
+        <div class="product-info">
+          <div class="product-title"><h3>Tápegységek</h3></div>
+          <p>Tiszta, csendes energiaellátás aktív védelemmel és moduláris kábelezéssel.</p>
+          <div class="product-tags"><span>80+ PLATINUM</span><span>ATX 3.1</span></div>
+          <a href="termekek.html">Részletek&nbsp; →</a>
+        </div>
+      </article>
+      <article class="product-card">
+        <img src="img/hutes.png" alt="Számítógép-hűtés" loading="lazy">
+        <div class="product-info">
+          <div class="product-title"><h3>Hűtés</h3></div>
+          <p>Precíz hőmenedzsment alacsony zajszinttel, léghűtéses és folyadékos kivitelben.</p>
+          <div class="product-tags"><span>32 DBA</span><span>360 MM</span></div>
+          <a href="termekek.html">Részletek&nbsp; →</a>
+        </div>
+      </article>
     </div>
   </section>
 
@@ -123,7 +160,7 @@
         <div class="footer-column">
           <h3>NAVIGÁCIÓ</h3>
           <nav aria-label="Lábléc navigáció">
-            <ul>
+            <ul style="list-style: none;">
               <li><a href="index.html">Főoldal</a></li>
               <li><a href="termekek.html">Termékek</a></li>
               <li><a href="rolunk.html">Rólunk</a></li>            
@@ -135,7 +172,7 @@
 
         <div class="footer-column">
           <h3>JOGI INFORMÁCIÓ</h3>
-          <ul style="text-decoration: none;">
+          <ul style="text-decoration: none; list-style: none;">
             <li><a href="#"style="text-decoration: none;">Adatkezelési tájékoztató</a></li>
             <li><a href="#"style="text-decoration: none;">Jogi nyilatkozat</a></li>
             <li><a href="#"style="text-decoration: none;">Cookie beállítások</a></li>
