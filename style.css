@@ -552,3 +552,95 @@ ul{margin:0;padding:0;list-style:none}
     font-weight: normal;
     letter-spacing: 1px;
 }
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Product portfolio */
+.portfolio {
+  background: #0f141b;
+  padding: 60px max(30px, calc((100% - 1296px) / 2)) 94px;
+  scroll-margin-top: 20px;
+}
+.portfolio-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 25px;
+  margin-bottom: 48px;
+}
+.portfolio h2 {
+  font-size: clamp(34px, 3.6vw, 52px);
+  line-height: 1.08;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+.portfolio-heading p {
+  color: #a1aab8;
+  line-height: 1.6;
+  max-width: 680px;
+}
+.portfolio-button {
+  white-space: nowrap;
+  padding: 16px 22px;
+  margin-bottom: 0;
+}
+.portfolio-button span { color: #00d2ff; margin-left: 12px; }
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+.product-card {
+  min-width: 0;
+  background: #242b36;
+  border: 1px solid #394351;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.product-card > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 312 / 260;
+  object-fit: cover;
+}
+.product-info { padding: 24px 23px 35px; }
+.product-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.product-title h3 { font-size: 24px; font-weight: 400; }
+
+.product-info p {
+  font-size: 14px;
+  color: #a1aab8;
+  line-height: 1.6;
+  min-height: 68px;
+  margin-bottom: 16px;
+}
+.product-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.product-tags span {
+  color: #70eafa;
+  font-size: 10px;
+  font-weight: 700;
+  border: 1px solid #1c6977;
+  border-radius: 3px;
+  padding: 7px 9px;
+  background: #1c3540;
+}
+.product-info > a { color: #00d2ff; font-size: 13px; font-weight: 700; text-decoration: none; }
+.product-info > a:hover { text-decoration: underline; }
+@media (max-width: 1050px) {
+  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 650px) {
+  .portfolio { padding: 45px 20px 65px; }
+  .portfolio-heading { display: block; }
+  .portfolio-button { display: inline-block; margin-top: 20px; }
+  .product-grid { grid-template-columns: 1fr; }
+}
+.btn-secondary span{ color: #00d2ff; margin-left: 12px; }
