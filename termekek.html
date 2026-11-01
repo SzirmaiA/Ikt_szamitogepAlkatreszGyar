@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="hu">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Termékek | CorePulse
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+  <link href="katalogus.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header>
+   <a class="logo catalog-logo" href="index.html">
+    <div class="logo-icon">
+    </div>
+    <div>
+     CorePulse
+     <span>
+      ENGINEERED PERFORMANCE
+     </span>
+    </div>
+   </a>
+   <nav class="main-nav">
+    <a href="index.html">
+     Főoldal
+    </a>
+    <a class="active" href="termekek.html">
+     Termékek
+    </a>
+    <a href="rolunk.html">
+     Rólunk
+    </a>
+    <a href="gyartas.html">
+     Gyártás
+    </a>
+    <a href="kapcsolat.html">
+     Kapcsolat
+    </a>
+   </nav>
+   <a class="cta-button" href="ajanlatkeres.html">
+    Ajánlatkérés ↗
+   </a>
+  </header>
+  <main class="catalog-main">
+   <section class="catalog-intro">
+    <div class="tag">
+     COREPULSE / TELJES KÍNÁLAT
+    </div>
+    <h1>
+     Teljesítmény minden
+     <br/>
+     <em>
+      komponensben.
+     </em>
+    </h1>
+    <p>
+     Fedezd fel a CorePulse komponenseit! Válassz kategóriát, keress névre, szűrj ár szerint, és találd meg a rendszeredhez illő megoldást.
+    </p>
+   </section>
+   <div class="catalog-layout">
+    <aside aria-label="Termékszűrők" class="catalog-sidebar">
+     <div class="catalog-filter-header">
+      <h2>
+       Szűrők
+      </h2>
+      <button id="resetTop" type="button">
+       Alaphelyzet
+      </button>
+     </div>
+     <fieldset>
+      <legend>
+       Kategóriák
+      </legend>
+      <label class="filter-check">
+       <input class="category-checkbox" type="checkbox" value="alaplap"/>
+       Alaplapok
+       <small>
+        4
+       </small>
+      </label>
+      <label class="filter-check">
+       <input class="category-checkbox" type="checkbox" value="processzor"/>
+       Processzorok
+       <small>
+        4
+       </small>
+      </label>
+      <label class="filter-check">
+       <input class="category-checkbox" type="checkbox" value="tapegyseg"/>
+       Tápegységek
+       <small>
+        4
+       </small>
+      </label>
+      <label class="filter-check">
+       <input class="category-checkbox" type="checkbox" value="hutes"/>
+       Hűtés
+       <small>
+        4
+       </small>
+      </label>
+     </fieldset>
+     <fieldset>
+      <legend>
+       Ár (Ft)
+      </legend>
+      <label class="price-label" for="minPrice">
+       Minimum ár
+      </label>
+      <input id="minPrice" inputmode="numeric" min="0" placeholder="0" step="1000" type="number"/>
+      <label class="price-label" for="maxPrice">
+       Maximum ár
+      </label>
+      <input id="maxPrice" inputmode="numeric" min="0" placeholder="Nincs felső korlát" step="1000" type="number"/>
+     </fieldset>
+     <button class="reset-btn" id="resetFilters" type="button">
+      Szűrők törlése ↺
+     </button>
+    </aside>
+    <section aria-label="Terméklista" class="catalog-results">
+     <div class="catalog-tools">
+      <label class="catalog-search">
+       <span aria-hidden="true">
+        ⌕
+       </span>
+       <input aria-label="Termékkeresés" id="searchInput" placeholder="Keresés termékre vagy jellemzőre…" type="search"/>
+      </label>
+      <label class="catalog-sort">
+       Rendezés
+       <select id="sortOrder">
+        <option value="default">
+         Ajánlott sorrend
+        </option>
+        <option value="price-asc">
+         Ár: növekvő
+        </option>
+        <option value="price-desc">
+         Ár: csökkenő
+        </option>
+        <option value="name">
+         Név szerint A–Z
+        </option>
+       </select>
+      </label>
+     </div>
+     <div class="catalog-results-info">
+      <p aria-live="polite" id="resultCount">
+       16 termék található
+      </p>
+
+     </div>
+     <div class="catalog-grid" id="catalogGrid">
+      <article class="catalog-card" data-category="alaplap" data-name="vector b650" data-price="74990" data-search="vector b650 alaplapok ddr5 • pcie 5.0 atx alaplap, ddr5 memóriatámogatással és modern bővítési lehetőségekkel.">
+       <div class="catalog-image">
+        <img alt="VECTOR B650" loading="lazy" src="img/alaplapok.png"/>
+       </div>
+       <div class="catalog-card-body">
+        <p class="catalog-kind">
+         Alaplapok
+        </p>
+        <h3>
+         VECTOR B650
+        </h3>
+        <p class="catalog-description">
+         ATX alaplap, DDR5 memóriatámogatással és modern bővítési lehetőségekkel.
+        </p>
+        <div class="catalog-spec">
+         DDR5 • PCIe 5.0
+        </div>
+        <div class="catalog-bottom">
+         <strong>
+          74 990 Ft
+         </strong>
+        </div>
+       </div>
+      </article>
+      <article class="catalog-card" data-category="alaplap" data-name="vector x870" data-price="129990" data-search="vector x870 alaplapok ddr5 • pcie 5.0 felsőkategóriás platform sokféle csatlakozóval és bővíthetőséggel.">
+       <div class="catalog-image">
+        <img alt="VECTOR X870" loading="lazy" src="img/alaplapok.png"/>
+       </div>
+       <div class="catalog-card-body">
+        <p class="catalog-kind">
+         Alaplapok
+        </p>
+        <h3>
+         VECTOR X870
+        </h3>
+        <p class="catalog-description">
+         Felsőkategóriás platform sokféle csatlakozóval és bővíthetőséggel.
+        </p>
+        <div class="catalog-spec">
+         DDR5 • PCIe 5.0
+        </div>
+        <div class="catalog-bottom">
+         <strong>
+          129 990 Ft
+         </strong>
+        </div>
+       </div>
+      </article>
+      <article class="catalog-card" data-category="alaplap" data-name="vector m760" data-price="59990" data-search="vector m760 alaplapok matx • ddr5 kompakt alaplap kisebb házakhoz, modern munkára és játékra.">
+       <div class="catalog-image">
+        <img alt="VECTOR M760" loading="lazy" src="img/alaplapok.png"/>
+       </div>
+       <div class="catalog-card-body">
+        <p class="catalog-kind">
+         Alaplapok
+        </p>
+        <h3>
+         VECTOR M760
+        </h3>
+        <p class="catalog-description">
+         Kompakt alaplap kisebb házakhoz, modern munkára és játékra.
+        </p>
+        <div class="catalog-spec">
+         mATX • DDR5
+        </div>
+        <div class="catalog-bottom">
+         <strong>
+          59 990 Ft
+         </strong>
+        </div>
+       </div>
+      </article>
+      <article class="catalog-card" data-category="alaplap" data-name="vector pro z" data-price="159990" data-search="vector pro z alaplapok atx • prémium vrm munkaállomásokhoz tervezett, gazdag csatlakozású alaplap.">
+       <div class="catalog-image">
+        <img alt="VECTOR PRO Z" loading="lazy" src="img/alaplapok.png"/>
+       </div>
+       <div class="catalog-card-body">
+        <p class="catalog-kind">
+         Alaplapok
+        </p>
+        <h3>
+         VECTOR PRO Z
+        </h3>
+        <p class="catalog-description">
+         Munkaállomásokhoz tervezett, gazdag csatlakozású alaplap.
+        </p>
+        <div class="catalog-spec">
+         ATX • Prémium VRM
+        </div>
+        <div class="catalog-bottom">
+         <strong>
+          159 990 Ft
+         </strong>
+        </div>
+       </div>
+      </article>
+      <article class="catalog-card" data-category="processzor" data-name="forge 6" data-price="89990" data-search="forge 6 processzorok 6 mag • 12 szál reszponzív működés mindennapi feladatokra és játékhoz.">
+       <div class="catalog-image">
+        <img alt="FORGE 6" loading="lazy" src="img/processzorok.png"/>
+       </div>
+       <div class="catalog-card-body">
+        <p class="catalog-kind">
+         Processzorok
+        </p>
+        <h3>
+         FORGE 6
+        </h3>
+        <p class="catalog-description">
+         Reszponzív működés mindennapi feladatokra és játékhoz.
+        </p>
+        <div class="catalog-spec">
+         6 mag • 12 szál
+        </div>
+        <div class="catalog-bottom">
+         <strong>
+          89 990 Ft
+         </strong>
+        </div>
+       </div>
+      </article>
+      <article class="catalog-card" data-category="processzor" data-name="forge 8" data-price="129990" data-search="forge 8 processzorok 8 mag • 16 szál sokoldalú processzor játékhoz, munkához és multitaskinghoz.">
+       <div class="catalog-image">
+        <img alt="FORGE 8" loading="lazy" src="img/processzorok.png"/>
+       </div>
+       <div class="catalog-card-body">
+        <p class="catalog-kind">
+         Processzorok
+        </p>
+        <h3>
+         FORGE 8
+        </h3>
+        <p class="catalog-description">
+         Sokoldalú processzor játékhoz, munkához és multitaskinghoz.
+        </p>
+        <div class="catalog-spec">
+         8 mag • 16 szál
+        </div>
+        <div class="catalog-bottom">
+         <strong>
+          129 990 Ft
+         </strong>
+        </div>
+       </div>
+      </article>
+      <article class="catalog-card" data-category="processzor" data-name="forge 12" data-price="189990" data-search="forge 12 processzorok 12 mag • 24 szál nagy számítási kapacitás tartalomgyártáshoz és fejlesztéshez.">
+       <div class="catalog-image">
+        <img alt="FORGE 12" loading="lazy" src="img/processzorok.png"/>
+       </div>
+       <div class="catalog-card-body">
+        <p class="catalog-kind">
+         Processzorok
+        </p>
+        <h3>
+         FORGE 12
+        </h3>
+        <p class="catalog-description">
+         Nagy számítási kapacitás tartalomgyártáshoz és fejlesztéshez.
+        </p>
+        <div class="catalog-spec">
+         12 mag • 24 szál
+        </div>
+        <div class="catalog-bottom">
+         <strong>
+          189 990 Ft
+         </strong>
+        </div>
+       </div>
+      </article>
+      <article class="catalog-card" data-category="processzor" data-name="forge 16 x" data-price="259990" data-search="forge 16 x processzorok 16 mag • 5,4 ghz csúcskategóriás teljesítmény összetett munkafolyamatokhoz.">
+       <div class="catalog-image">
+        <img alt="FORGE 16 X" loading="lazy" src="img/processzorok.png"/>
+       </div>
+       <div class="catalog-card-body">
+        <p class="catalog-kind">
+         Processzorok
+        </p>
+        <h3>
+         FORGE 16 X
+        </h3>
+        <p class="catalog-description">
+         Csúcskategóriás teljesítmény összetett munkafolyamatokhoz.
+        </p>
+        <div class="catalog-spec">
+         16 mag • 5,4 GHz
+        </div>
+        <div class="catalog-bottom">
+         <strong>
+          259 990 Ft
+         </strong>
+        </div>
+       </div>
+      </article>
+      <article class="catalog-card" data-category="tapegyseg" data-name="grid 650" data-price="36990" data-search="grid 650 tápegységek 650 w • moduláris hatékony energiaellátás középkategóriás konfigurációkhoz.">
+       <div class="catalog-image">
+        <img alt="GRID 650" loading="lazy" src="img/tapegysegek.png"/>
+       </div>
+       <div class="catalog-card-body">
+        <p class="catalog-kind">
+         Tápegységek
+        </p>
+        <h3>
+         GRID 650
+        </h3>
+        <p class="catalog-description">
+         Hatékony energiaellátás középkategóriás konfigurációkhoz.
+        </p>
+        <div class="catalog-spec">
+         650 W • Moduláris
+        </div>
+        <div class="catalog-bottom">
+         <strong>
+          36 990 Ft
+         </strong>
+        </div>
+       </div>
+      </article>
+      <article class="catalog-card" data-category="tapegyseg" data-name="grid 750" data-price="46990" data-search="grid 750 tápegységek 750 w • atx 3.1 rugalmas tápegység modern gamer rendszerekhez.">
+       <div class="catalog-image">
+        <img alt="GRID 750" loading="lazy" src="img/tapegysegek.png"/>
+       </div>
+       <div class="catalog-card-body">
+        <p class="catalog-kind">
+         Tápegységek
+        </p>
+        <h3>
+         GRID 750
+        </h3>
+        <p class="catalog-description">
+         Rugalmas tápegység modern gamer rendszerekhez.
+        </p>
+        <div class="catalog-spec">
+         750 W • ATX 3.1
+        </div>
+        <div class="catalog-bottom">
+         <strong>
+          46 990 Ft
+         </strong>
+        </div>
+       </div>
+      </article>
+      <article class="catalog-card" data-category="tapegyseg" data-name="grid 850 platinum" data-price="69990" data-search="grid 850 platinum tápegységek 850 w • 80+ platinum nagy hatékonyság és tartalék teljesítmény erős hardverekhez.">
+       <div class="catalog-image">
+        <img alt="GRID 850 PLATINUM" loading="lazy" src="img/tapegysegek.png"/>
+       </div>
+       <div class="catalog-card-body">
+        <p class="catalog-kind">
+         Tápegységek
+        </p>
+        <h3>
+         GRID 850 PLATINUM
+        </h3>
+        <p class="catalog-description">
+         Nagy hatékonyság és tartalék teljesítmény erős hardverekhez.
+        </p>
+        <div class="catalog-spec">
+         850 W • 80+ Platinum
+        </div>
+        <div class="catalog-bottom">
+         <strong>
+          69 990 Ft
+         </strong>
+        </div>
+       </div>
+      </article>
+      <article class="catalog-card" data-category="tapegyseg" data-name="grid 1000 platinum" data-price="89990" data-search="grid 1000 platinum tápegységek 1000 w • atx 3.1 nagyobb teljesítményigényű munkaállomásokhoz tervezve.">
+       <div class="catalog-image">
+        <img alt="GRID 1000 PLATINUM" loading="lazy" src="img/tapegysegek.png"/>
+       </div>
+       <div class="catalog-card-body">
+        <p class="catalog-kind">
+         Tápegységek
+        </p>
+        <h3>
+         GRID 1000 PLATINUM
+        </h3>
+        <p class="catalog-description">
+         Nagyobb teljesítményigényű munkaállomásokhoz tervezve.
+        </p>
+        <div class="catalog-spec">
+         1000 W • ATX 3.1
+        </div>
+        <div class="catalog-bottom">
+         <strong>
+          89 990 Ft
+         </strong>
+        </div>
+       </div>
+      </article>
+      <article class="catalog-card" data-category="hutes" data-name="flow air 120" data-price="13990" data-search="flow air 120 hűtés 120 mm • léghűtés kompakt léghűtő egyszerű, halk működésre tervezve.">
+       <div class="catalog-image">
+        <img alt="FLOW AIR 120" loading="lazy" src="img/hutes.png"/>
+       </div>
+       <div class="catalog-card-body">
+        <p class="catalog-kind">
+         Hűtés
+        </p>
+        <h3>
+         FLOW AIR 120
+        </h3>
+        <p class="catalog-description">
+         Kompakt léghűtő egyszerű, halk működésre tervezve.
+        </p>
+        <div class="catalog-spec">
+         120 mm • Léghűtés
+        </div>
+        <div class="catalog-bottom">
+         <strong>
+          13 990 Ft
+         </strong>
+        </div>
+       </div>
+      </article>
+      <article class="catalog-card" data-category="hutes" data-name="flow air dual" data-price="24990" data-search="flow air dual hűtés dupla torony • léghűtés nagy hőleadó felület tartós terhelés esetén.">
+       <div class="catalog-image">
+        <img alt="FLOW AIR DUAL" loading="lazy" src="img/hutes.png"/>
+       </div>
+       <div class="catalog-card-body">
+        <p class="catalog-kind">
+         Hűtés
+        </p>
+        <h3>
+         FLOW AIR DUAL
+        </h3>
+        <p class="catalog-description">
+         Nagy hőleadó felület tartós terhelés esetén.
+        </p>
+        <div class="catalog-spec">
+         Dupla torony • Léghűtés
+        </div>
+        <div class="catalog-bottom">
+         <strong>
+          24 990 Ft
+         </strong>
+        </div>
+       </div>
+      </article>
+      <article class="catalog-card" data-category="hutes" data-name="flow liquid 240" data-price="44990" data-search="flow liquid 240 hűtés 240 mm • folyadékhűtés letisztult folyadékhűtés modern konfigurációkhoz.">
+       <div class="catalog-image">
+        <img alt="FLOW LIQUID 240" loading="lazy" src="img/hutes.png"/>
+       </div>
+       <div class="catalog-card-body">
+        <p class="catalog-kind">
+         Hűtés
+        </p>
+        <h3>
+         FLOW LIQUID 240
+        </h3>
+        <p class="catalog-description">
+         Letisztult folyadékhűtés modern konfigurációkhoz.
+        </p>
+        <div class="catalog-spec">
+         240 mm • Folyadékhűtés
+        </div>
+        <div class="catalog-bottom">
+         <strong>
+          44 990 Ft
+         </strong>
+        </div>
+       </div>
+      </article>
+      <article class="catalog-card" data-category="hutes" data-name="flow liquid 360" data-price="64990" data-search="flow liquid 360 hűtés 360 mm • folyadékhűtés nagy radiátorfelület kiemelt hűtési igényekhez.">
+       <div class="catalog-image">
+        <img alt="FLOW LIQUID 360" loading="lazy" src="img/hutes.png"/>
+       </div>
+       <div class="catalog-card-body">
+        <p class="catalog-kind">
+         Hűtés
+        </p>
+        <h3>
+         FLOW LIQUID 360
+        </h3>
+        <p class="catalog-description">
+         Nagy radiátorfelület kiemelt hűtési igényekhez.
+        </p>
+        <div class="catalog-spec">
+         360 mm • Folyadékhűtés
+        </div>
+        <div class="catalog-bottom">
+         <strong>
+          64 990 Ft
+         </strong>
+        </div>
+       </div>
+      </article>
+     </div>
+     <div class="catalog-empty" hidden="" id="emptyState">
+      <h2>
+       Nincs találat
+      </h2>
+      <p>
+       Próbálj más keresést vagy módosítsd a szűrőket.
+      </p>
+      <button id="resetEmpty" type="button">
+       Összes termék mutatása
+      </button>
+     </div>
+    </section>
+   </div>
+   <section class="catalog-help">
+    <div>
+     <p class="catalog-overline">
+      SEGÍTÜNK A VÁLASZTÁSBAN
+     </p>
+     <h2>
+      Egyedi konfigurációt építenél?
+     </h2>
+     <p>
+      Írd meg az igényeidet, és kérj ajánlatot a megfelelő komponensekre.
+     </p>
+    </div>
+    <a class="dialog-cta" href="ajanlatkeres.html">
+     Ajánlatkérés ↗
+    </a>
+   </section>
+  </main>
+  <footer class="catalog-footer">
+   <a href="index.html">
+    CorePulse
+   </a>
+   <span>
+    © 2026 CorePulse · Bemutató termékkatalógus
+   </span>
+   <a href="index.html">
+    Vissza a főoldalra ↑
+   </a>
+  </footer>
+  <dialog aria-labelledby="adat1-cim" class="product-dialog" id="adat1">
+   <button aria-label="Bezárás" class="dialog-close" onclick="bezaras('adat1')">
+    ×
+   </button>
+   <div class="dialog-visual">
+    <img alt="VECTOR B650" src="img/alaplapok.png"/>
+   </div>
+   <div class="dialog-body">
+    <span class="dialog-category">
+     COREPULSE / ALAPLAPOK
+    </span>
+    <p class="dialog-eyebrow">
+     MÉRNÖKI PONTOSSÁG. ÁTGONDOLT TELJESÍTMÉNY.
+    </p>
+    <h2 id="adat1-cim">
+     VECTOR B650
+    </h2>
+    <p>
+     ATX alaplap, DDR5 memóriatámogatással és modern bővítési lehetőségekkel. A CorePulse termékportfólió részeként a kiegyensúlyozott rendszerépítésre és megbízható működésre helyezi a hangsúlyt.
+    </p>
+    <div class="dialog-tags">
+     <span>
+      DDR5 • PCIe 5.0
+     </span>
+     <span>
+      Bemutató termék
+     </span>
+    </div>
+    <p class="catalog-dialog-price">
+     Irányár: 74 990 Ft
+    </p>
+    <a class="dialog-cta" href="ajanlatkeres.html?termek=VECTOR%20B650">
+     Ajánlatkérés ↗
+    </a>
+   </div>
+  </dialog>
+  <dialog aria-labelledby="adat2-cim" class="product-dialog" id="adat2">
+   <button aria-label="Bezárás" class="dialog-close" onclick="bezaras('adat2')">
+    ×
+   </button>
+   <div class="dialog-visual">
+    <img alt="VECTOR X870" src="img/alaplapok.png"/>
+   </div>
+   <div class="dialog-body">
+    <span class="dialog-category">
+     COREPULSE / ALAPLAPOK
+    </span>
+    <p class="dialog-eyebrow">
+     MÉRNÖKI PONTOSSÁG. ÁTGONDOLT TELJESÍTMÉNY.
+    </p>
+    <h2 id="adat2-cim">
+     VECTOR X870
+    </h2>
+    <p>
+     Felsőkategóriás platform sokféle csatlakozóval és bővíthetőséggel. A CorePulse termékportfólió részeként a kiegyensúlyozott rendszerépítésre és megbízható működésre helyezi a hangsúlyt.
+    </p>
+    <div class="dialog-tags">
+     <span>
+      DDR5 • PCIe 5.0
+     </span>
+     <span>
+      Bemutató termék
+     </span>
+    </div>
+    <p class="catalog-dialog-price">
+     Irányár: 129 990 Ft
+    </p>
+    <a class="dialog-cta" href="ajanlatkeres.html?termek=VECTOR%20X870">
+     Ajánlatkérés ↗
+    </a>
+   </div>
+  </dialog>
+  <dialog aria-labelledby="adat3-cim" class="product-dialog" id="adat3">
+   <button aria-label="Bezárás" class="dialog-close" onclick="bezaras('adat3')">
+    ×
+   </button>
+   <div class="dialog-visual">
+    <img alt="VECTOR M760" src="img/alaplapok.png"/>
+   </div>
+   <div class="dialog-body">
+    <span class="dialog-category">
+     COREPULSE / ALAPLAPOK
+    </span>
+    <p class="dialog-eyebrow">
+     MÉRNÖKI PONTOSSÁG. ÁTGONDOLT TELJESÍTMÉNY.
+    </p>
+    <h2 id="adat3-cim">
+     VECTOR M760
+    </h2>
+    <p>
+     Kompakt alaplap kisebb házakhoz, modern munkára és játékra. A CorePulse termékportfólió részeként a kiegyensúlyozott rendszerépítésre és megbízható működésre helyezi a hangsúlyt.
+    </p>
+    <div class="dialog-tags">
+     <span>
+      mATX • DDR5
+     </span>
+     <span>
+      Bemutató termék
+     </span>
+    </div>
+    <p class="catalog-dialog-price">
+     Irányár: 59 990 Ft
+    </p>
+    <a class="dialog-cta" href="ajanlatkeres.html?termek=VECTOR%20M760">
+     Ajánlatkérés ↗
+    </a>
+   </div>
+  </dialog>
+  <dialog aria-labelledby="adat4-cim" class="product-dialog" id="adat4">
+   <button aria-label="Bezárás" class="dialog-close" onclick="bezaras('adat4')">
+    ×
+   </button>
+   <div class="dialog-visual">
+    <img alt="VECTOR PRO Z" src="img/alaplapok.png"/>
+   </div>
+   <div class="dialog-body">
+    <span class="dialog-category">
+     COREPULSE / ALAPLAPOK
+    </span>
+    <p class="dialog-eyebrow">
+     MÉRNÖKI PONTOSSÁG. ÁTGONDOLT TELJESÍTMÉNY.
+    </p>
+    <h2 id="adat4-cim">
+     VECTOR PRO Z
+    </h2>
+    <p>
+     Munkaállomásokhoz tervezett, gazdag csatlakozású alaplap. A CorePulse termékportfólió részeként a kiegyensúlyozott rendszerépítésre és megbízható működésre helyezi a hangsúlyt.
+    </p>
+    <div class="dialog-tags">
+     <span>
+      ATX • Prémium VRM
+     </span>
+     <span>
+      Bemutató termék
+     </span>
+    </div>
+    <p class="catalog-dialog-price">
+     Irányár: 159 990 Ft
+    </p>
+    <a class="dialog-cta" href="ajanlatkeres.html?termek=VECTOR%20PRO%20Z">
+     Ajánlatkérés ↗
+    </a>
+   </div>
+  </dialog>
+  <dialog aria-labelledby="adat5-cim" class="product-dialog" id="adat5">
+   <button aria-label="Bezárás" class="dialog-close" onclick="bezaras('adat5')">
+    ×
+   </button>
+   <div class="dialog-visual">
+    <img alt="FORGE 6" src="img/processzorok.png"/>
+   </div>
+   <div class="dialog-body">
+    <span class="dialog-category">
+     COREPULSE / PROCESSZOROK
+    </span>
+    <p class="dialog-eyebrow">
+     MÉRNÖKI PONTOSSÁG. ÁTGONDOLT TELJESÍTMÉNY.
+    </p>
+    <h2 id="adat5-cim">
+     FORGE 6
+    </h2>
+    <p>
+     Reszponzív működés mindennapi feladatokra és játékhoz. A CorePulse termékportfólió részeként a kiegyensúlyozott rendszerépítésre és megbízható működésre helyezi a hangsúlyt.
+    </p>
+    <div class="dialog-tags">
+     <span>
+      6 mag • 12 szál
+     </span>
+     <span>
+      Bemutató termék
+     </span>
+    </div>
+    <p class="catalog-dialog-price">
+     Irányár: 89 990 Ft
+    </p>
+    <a class="dialog-cta" href="ajanlatkeres.html?termek=FORGE%206">
+     Ajánlatkérés ↗
+    </a>
+   </div>
+  </dialog>
+  <dialog aria-labelledby="adat6-cim" class="product-dialog" id="adat6">
+   <button aria-label="Bezárás" class="dialog-close" onclick="bezaras('adat6')">
+    ×
+   </button>
+   <div class="dialog-visual">
+    <img alt="FORGE 8" src="img/processzorok.png"/>
+   </div>
+   <div class="dialog-body">
+    <span class="dialog-category">
+     COREPULSE / PROCESSZOROK
+    </span>
+    <p class="dialog-eyebrow">
+     MÉRNÖKI PONTOSSÁG. ÁTGONDOLT TELJESÍTMÉNY.
+    </p>
+    <h2 id="adat6-cim">
+     FORGE 8
+    </h2>
+    <p>
+     Sokoldalú processzor játékhoz, munkához és multitaskinghoz. A CorePulse termékportfólió részeként a kiegyensúlyozott rendszerépítésre és megbízható működésre helyezi a hangsúlyt.
+    </p>
+    <div class="dialog-tags">
+     <span>
+      8 mag • 16 szál
+     </span>
+     <span>
+      Bemutató termék
+     </span>
+    </div>
+    <p class="catalog-dialog-price">
+     Irányár: 129 990 Ft
+    </p>
+    <a class="dialog-cta" href="ajanlatkeres.html?termek=FORGE%208">
+     Ajánlatkérés ↗
+    </a>
+   </div>
+  </dialog>
+  <dialog aria-labelledby="adat7-cim" class="product-dialog" id="adat7">
+   <button aria-label="Bezárás" class="dialog-close" onclick="bezaras('adat7')">
+    ×
+   </button>
+   <div class="dialog-visual">
+    <img alt="FORGE 12" src="img/processzorok.png"/>
+   </div>
+   <div class="dialog-body">
+    <span class="dialog-category">
+     COREPULSE / PROCESSZOROK
+    </span>
+    <p class="dialog-eyebrow">
+     MÉRNÖKI PONTOSSÁG. ÁTGONDOLT TELJESÍTMÉNY.
+    </p>
+    <h2 id="adat7-cim">
+     FORGE 12
+    </h2>
+    <p>
+     Nagy számítási kapacitás tartalomgyártáshoz és fejlesztéshez. A CorePulse termékportfólió részeként a kiegyensúlyozott rendszerépítésre és megbízható működésre helyezi a hangsúlyt.
+    </p>
+    <div class="dialog-tags">
+     <span>
+      12 mag • 24 szál
+     </span>
+     <span>
+      Bemutató termék
+     </span>
+    </div>
+    <p class="catalog-dialog-price">
+     Irányár: 189 990 Ft
+    </p>
+    <a class="dialog-cta" href="ajanlatkeres.html?termek=FORGE%2012">
+     Ajánlatkérés ↗
+    </a>
+   </div>
+  </dialog>
+  <dialog aria-labelledby="adat8-cim" class="product-dialog" id="adat8">
+   <button aria-label="Bezárás" class="dialog-close" onclick="bezaras('adat8')">
+    ×
+   </button>
+   <div class="dialog-visual">
+    <img alt="FORGE 16 X" src="img/processzorok.png"/>
+   </div>
+   <div class="dialog-body">
+    <span class="dialog-category">
+     COREPULSE / PROCESSZOROK
+    </span>
+    <p class="dialog-eyebrow">
+     MÉRNÖKI PONTOSSÁG. ÁTGONDOLT TELJESÍTMÉNY.
+    </p>
+    <h2 id="adat8-cim">
+     FORGE 16 X
+    </h2>
+    <p>
+     Csúcskategóriás teljesítmény összetett munkafolyamatokhoz. A CorePulse termékportfólió részeként a kiegyensúlyozott rendszerépítésre és megbízható működésre helyezi a hangsúlyt.
+    </p>
+    <div class="dialog-tags">
+     <span>
+      16 mag • 5,4 GHz
+     </span>
+     <span>
+      Bemutató termék
+     </span>
+    </div>
+    <p class="catalog-dialog-price">
+     Irányár: 259 990 Ft
+    </p>
+    <a class="dialog-cta" href="ajanlatkeres.html?termek=FORGE%2016%20X">
+     Ajánlatkérés ↗
+    </a>
+   </div>
+  </dialog>
+  <dialog aria-labelledby="adat9-cim" class="product-dialog" id="adat9">
+   <button aria-label="Bezárás" class="dialog-close" onclick="bezaras('adat9')">
+    ×
+   </button>
+   <div class="dialog-visual">
+    <img alt="GRID 650" src="img/tapegysegek.png"/>
+   </div>
+   <div class="dialog-body">
+    <span class="dialog-category">
+     COREPULSE / TÁPEGYSÉGEK
+    </span>
+    <p class="dialog-eyebrow">
+     MÉRNÖKI PONTOSSÁG. ÁTGONDOLT TELJESÍTMÉNY.
+    </p>
+    <h2 id="adat9-cim">
+     GRID 650
+    </h2>
+    <p>
+     Hatékony energiaellátás középkategóriás konfigurációkhoz. A CorePulse termékportfólió részeként a kiegyensúlyozott rendszerépítésre és megbízható működésre helyezi a hangsúlyt.
+    </p>
+    <div class="dialog-tags">
+     <span>
+      650 W • Moduláris
+     </span>
+     <span>
+      Bemutató termék
+     </span>
+    </div>
+    <p class="catalog-dialog-price">
+     Irányár: 36 990 Ft
+    </p>
+    <a class="dialog-cta" href="ajanlatkeres.html?termek=GRID%20650">
+     Ajánlatkérés ↗
+    </a>
+   </div>
+  </dialog>
+  <dialog aria-labelledby="adat10-cim" class="product-dialog" id="adat10">
+   <button aria-label="Bezárás" class="dialog-close" onclick="bezaras('adat10')">
+    ×
+   </button>
+   <div class="dialog-visual">
+    <img alt="GRID 750" src="img/tapegysegek.png"/>
+   </div>
+   <div class="dialog-body">
+    <span class="dialog-category">
+     COREPULSE / TÁPEGYSÉGEK
+    </span>
+    <p class="dialog-eyebrow">
+     MÉRNÖKI PONTOSSÁG. ÁTGONDOLT TELJESÍTMÉNY.
+    </p>
+    <h2 id="adat10-cim">
+     GRID 750
+    </h2>
+    <p>
+     Rugalmas tápegység modern gamer rendszerekhez. A CorePulse termékportfólió részeként a kiegyensúlyozott rendszerépítésre és megbízható működésre helyezi a hangsúlyt.
+    </p>
+    <div class="dialog-tags">
+     <span>
+      750 W • ATX 3.1
+     </span>
+     <span>
+      Bemutató termék
+     </span>
+    </div>
+    <p class="catalog-dialog-price">
+     Irányár: 46 990 Ft
+    </p>
+    <a class="dialog-cta" href="ajanlatkeres.html?termek=GRID%20750">
+     Ajánlatkérés ↗
+    </a>
+   </div>
+  </dialog>
+  <dialog aria-labelledby="adat11-cim" class="product-dialog" id="adat11">
+   <button aria-label="Bezárás" class="dialog-close" onclick="bezaras('adat11')">
+    ×
+   </button>
+   <div class="dialog-visual">
+    <img alt="GRID 850 PLATINUM" src="img/tapegysegek.png"/>
+   </div>
+   <div class="dialog-body">
+    <span class="dialog-category">
+     COREPULSE / TÁPEGYSÉGEK
+    </span>
+    <p class="dialog-eyebrow">
+     MÉRNÖKI PONTOSSÁG. ÁTGONDOLT TELJESÍTMÉNY.
+    </p>
+    <h2 id="adat11-cim">
+     GRID 850 PLATINUM
+    </h2>
+    <p>
+     Nagy hatékonyság és tartalék teljesítmény erős hardverekhez. A CorePulse termékportfólió részeként a kiegyensúlyozott rendszerépítésre és megbízható működésre helyezi a hangsúlyt.
+    </p>
+    <div class="dialog-tags">
+     <span>
+      850 W • 80+ Platinum
+     </span>
+     <span>
+      Bemutató termék
+     </span>
+    </div>
+    <p class="catalog-dialog-price">
+     Irányár: 69 990 Ft
+    </p>
+    <a class="dialog-cta" href="ajanlatkeres.html?termek=GRID%20850%20PLATINUM">
+     Ajánlatkérés ↗
+    </a>
+   </div>
+  </dialog>
+  <dialog aria-labelledby="adat12-cim" class="product-dialog" id="adat12">
+   <button aria-label="Bezárás" class="dialog-close" onclick="bezaras('adat12')">
+    ×
+   </button>
+   <div class="dialog-visual">
+    <img alt="GRID 1000 PLATINUM" src="img/tapegysegek.png"/>
+   </div>
+   <div class="dialog-body">
+    <span class="dialog-category">
+     COREPULSE / TÁPEGYSÉGEK
+    </span>
+    <p class="dialog-eyebrow">
+     MÉRNÖKI PONTOSSÁG. ÁTGONDOLT TELJESÍTMÉNY.
+    </p>
+    <h2 id="adat12-cim">
+     GRID 1000 PLATINUM
+    </h2>
+    <p>
+     Nagyobb teljesítményigényű munkaállomásokhoz tervezve. A CorePulse termékportfólió részeként a kiegyensúlyozott rendszerépítésre és megbízható működésre helyezi a hangsúlyt.
+    </p>
+    <div class="dialog-tags">
+     <span>
+      1000 W • ATX 3.1
+     </span>
+     <span>
+      Bemutató termék
+     </span>
+    </div>
+    <p class="catalog-dialog-price">
+     Irányár: 89 990 Ft
+    </p>
+    <a class="dialog-cta" href="ajanlatkeres.html?termek=GRID%201000%20PLATINUM">
+     Ajánlatkérés ↗
+    </a>
+   </div>
+  </dialog>
+  <dialog aria-labelledby="adat13-cim" class="product-dialog" id="adat13">
+   <button aria-label="Bezárás" class="dialog-close" onclick="bezaras('adat13')">
+    ×
+   </button>
+   <div class="dialog-visual">
+    <img alt="FLOW AIR 120" src="img/hutes.png"/>
+   </div>
+   <div class="dialog-body">
+    <span class="dialog-category">
+     COREPULSE / HŰTÉS
+    </span>
+    <p class="dialog-eyebrow">
+     MÉRNÖKI PONTOSSÁG. ÁTGONDOLT TELJESÍTMÉNY.
+    </p>
+    <h2 id="adat13-cim">
+     FLOW AIR 120
+    </h2>
+    <p>
+     Kompakt léghűtő egyszerű, halk működésre tervezve. A CorePulse termékportfólió részeként a kiegyensúlyozott rendszerépítésre és megbízható működésre helyezi a hangsúlyt.
+    </p>
+    <div class="dialog-tags">
+     <span>
+      120 mm • Léghűtés
+     </span>
+     <span>
+      Bemutató termék
+     </span>
+    </div>
+    <p class="catalog-dialog-price">
+     Irányár: 13 990 Ft
+    </p>
+    <a class="dialog-cta" href="ajanlatkeres.html?termek=FLOW%20AIR%20120">
+     Ajánlatkérés ↗
+    </a>
+   </div>
+  </dialog>
+  <dialog aria-labelledby="adat14-cim" class="product-dialog" id="adat14">
+   <button aria-label="Bezárás" class="dialog-close" onclick="bezaras('adat14')">
+    ×
+   </button>
+   <div class="dialog-visual">
+    <img alt="FLOW AIR DUAL" src="img/hutes.png"/>
+   </div>
+   <div class="dialog-body">
+    <span class="dialog-category">
+     COREPULSE / HŰTÉS
+    </span>
+    <p class="dialog-eyebrow">
+     MÉRNÖKI PONTOSSÁG. ÁTGONDOLT TELJESÍTMÉNY.
+    </p>
+    <h2 id="adat14-cim">
+     FLOW AIR DUAL
+    </h2>
+    <p>
+     Nagy hőleadó felület tartós terhelés esetén. A CorePulse termékportfólió részeként a kiegyensúlyozott rendszerépítésre és megbízható működésre helyezi a hangsúlyt.
+    </p>
+    <div class="dialog-tags">
+     <span>
+      Dupla torony • Léghűtés
+     </span>
+     <span>
+      Bemutató termék
+     </span>
+    </div>
+    <p class="catalog-dialog-price">
+     Irányár: 24 990 Ft
+    </p>
+    <a class="dialog-cta" href="ajanlatkeres.html?termek=FLOW%20AIR%20DUAL">
+     Ajánlatkérés ↗
+    </a>
+   </div>
+  </dialog>
+  <dialog aria-labelledby="adat15-cim" class="product-dialog" id="adat15">
+   <button aria-label="Bezárás" class="dialog-close" onclick="bezaras('adat15')">
+    ×
+   </button>
+   <div class="dialog-visual">
+    <img alt="FLOW LIQUID 240" src="img/hutes.png"/>
+   </div>
+   <div class="dialog-body">
+    <span class="dialog-category">
+     COREPULSE / HŰTÉS
+    </span>
+    <p class="dialog-eyebrow">
+     MÉRNÖKI PONTOSSÁG. ÁTGONDOLT TELJESÍTMÉNY.
+    </p>
+    <h2 id="adat15-cim">
+     FLOW LIQUID 240
+    </h2>
+    <p>
+     Letisztult folyadékhűtés modern konfigurációkhoz. A CorePulse termékportfólió részeként a kiegyensúlyozott rendszerépítésre és megbízható működésre helyezi a hangsúlyt.
+    </p>
+    <div class="dialog-tags">
+     <span>
+      240 mm • Folyadékhűtés
+     </span>
+     <span>
+      Bemutató termék
+     </span>
+    </div>
+    <p class="catalog-dialog-price">
+     Irányár: 44 990 Ft
+    </p>
+    <a class="dialog-cta" href="ajanlatkeres.html?termek=FLOW%20LIQUID%20240">
+     Ajánlatkérés ↗
+    </a>
+   </div>
+  </dialog>
+  <dialog aria-labelledby="adat16-cim" class="product-dialog" id="adat16">
+   <button aria-label="Bezárás" class="dialog-close" onclick="bezaras('adat16')">
+    ×
+   </button>
+   <div class="dialog-visual">
+    <img alt="FLOW LIQUID 360" src="img/hutes.png"/>
+   </div>
+   <div class="dialog-body">
+    <span class="dialog-category">
+     COREPULSE / HŰTÉS
+    </span>
+    <p class="dialog-eyebrow">
+     MÉRNÖKI PONTOSSÁG. ÁTGONDOLT TELJESÍTMÉNY.
+    </p>
+    <h2 id="adat16-cim">
+     FLOW LIQUID 360
+    </h2>
+    <p>
+     Nagy radiátorfelület kiemelt hűtési igényekhez. A CorePulse termékportfólió részeként a kiegyensúlyozott rendszerépítésre és megbízható működésre helyezi a hangsúlyt.
+    </p>
+    <div class="dialog-tags">
+     <span>
+      360 mm • Folyadékhűtés
+     </span>
+     <span>
+      Bemutató termék
+     </span>
+    </div>
+    <p class="catalog-dialog-price">
+     Irányár: 64 990 Ft
+    </p>
+    <a class="dialog-cta" href="ajanlatkeres.html?termek=FLOW%20LIQUID%20360">
+     Ajánlatkérés ↗
+    </a>
+   </div>
+  </dialog>
+  <script src="script.js">
+  </script>
+  <script src="katalogus.js">
+  </script>
+ </body>
+</html>

@@ -1,0 +1,415 @@
+
+.catalog-logo  {
+     color:#fff;
+     text-decoration:none;
+}
+ .catalog-main {
+    background:#0f141b;
+    min-height:100vh;
+    padding:0 max(24px,calc((100% - 1296px)/2)) 70px;
+}
+.catalog-intro {
+    padding:78px 0 55px;
+    border-bottom:1px solid #2b3642
+}
+.catalog-intro h1 {
+    font-size:clamp(38px,5vw,64px);
+    font-weight:500;
+    letter-spacing:-1.8px;
+    line-height:1.08;
+    margin-bottom:22px
+}
+.catalog-intro em {
+    font-style:normal;
+    color:#00d2ff
+}
+.catalog-intro>p {
+    color:#aab5c4;
+    line-height:1.8;
+    max-width:710px
+}
+.catalog-counts {
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:26px
+}
+.catalog-counts span {
+    border:1px solid #345061;
+    border-radius:4px;
+    padding:9px 13px;
+    color:#92dfe9;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.5px
+}
+.catalog-layout {
+    display:grid;
+    grid-template-columns:245px minmax(0,1fr);
+    gap:30px;
+    padding-top:38px
+}
+.catalog-sidebar {
+    align-self:start;
+    background:#19212b;
+    border:1px solid #303c4a;
+    border-radius:9px;
+    padding:24px;
+    position:sticky;
+    top:20px
+}
+.catalog-filter-header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:26px
+}
+.catalog-filter-header h2 {
+    font-size:21px;
+    font-weight:500
+}
+.catalog-filter-header button {
+    border:0;
+    background:none;
+    color:#00d2ff;
+    cursor:pointer;
+    font-size:12px
+}
+.catalog-sidebar fieldset {
+    border:0;
+    border-top:1px solid #35404f;
+    padding:20px 0
+}
+.catalog-sidebar legend {
+    font-size:13px;
+    font-weight:700;
+    padding-top:14px;
+    color:#e5eaf0
+}
+.filter-check {
+    display:flex;
+    gap:9px;
+    align-items:center;
+    font-size:13px;
+    margin:15px 0;
+    color:#b7c1ce;
+    cursor:pointer
+}
+.filter-check input {
+    accent-color:#00c2d1
+}
+.filter-check small {
+    margin-left:auto;
+    color:#758496
+}
+.price-label {
+    display:block;
+    color:#a1adbb;
+    font-size:12px;
+    margin:12px 0 6px
+}
+.catalog-sidebar input[type=number],.catalog-search input,.catalog-sort select {
+    color:#e6f1f6;
+    background:#10161e;
+    border:1px solid #384758;
+    border-radius:5px;
+    padding:12px;
+    width:100%;
+    outline:none
+}
+.catalog-sidebar input:focus,.catalog-search input:focus,.catalog-sort select:focus {
+    border-color:#00d2ff
+}
+.catalog-hint {
+    font-size:11px;
+    color:#758698;
+    line-height:1.6;
+    margin-top:12px
+}
+.reset-btn,.catalog-empty button {
+    width:100%;
+    border:1px solid #355366;
+    background:#102b35;
+    color:#7eebf8;
+    cursor:pointer;
+    border-radius:5px;
+    padding:12px;
+    font-weight:700
+}
+.catalog-tools {
+    display:flex;
+    gap:12px;
+    align-items:center
+}
+.catalog-search {
+    flex:1;
+    position:relative
+}
+.catalog-search span {
+    position:absolute;
+    left:13px;
+    top:7px;
+    color:#00d2ff;
+    font-size:24px
+}
+.catalog-search input {
+    padding-left:42px
+}
+.catalog-sort {
+    display:flex;
+    align-items:center;
+    gap:9px;
+    color:#aab7c5;
+    font-size:12px;
+    white-space:nowrap
+}
+.catalog-sort select {
+    width:185px;
+    cursor:pointer
+}
+.catalog-results-info {
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    align-items:center;
+    color:#b5c0cb;
+    margin:22px 0
+}
+.catalog-results-info p {
+    font-weight:700;
+    font-size:13px
+}
+.catalog-results-info span {
+    font-size:11px;
+    color:#758899
+}
+.catalog-grid {
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:17px
+}
+.catalog-card {
+    background:#242b36;
+    border:1px solid #384556;
+    border-radius:8px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    transition:border-color .2s,transform .2s
+}
+.catalog-card:hover {
+    border-color:#00c2d1;
+    transform:translateY(-3px)
+}
+.catalog-card[hidden] {
+    display:none!important
+}
+.catalog-image {
+    position:relative;
+    aspect-ratio:1.32;
+    background:#10161e
+}
+.catalog-image img {
+    width:100%;
+    height:100%;
+    object-fit:cover
+}
+.catalog-card-body {
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    flex:1
+}
+.catalog-kind {
+    font-size:10px;
+    color:#00d2ff;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:7px
+}
+.catalog-card h3 {
+    font-size:21px;
+    font-weight:500;
+    margin-bottom:10px
+}
+.catalog-description {
+    color:#acb7c5;
+    line-height:1.6;
+    font-size:12px;
+    flex:1;
+    min-height:65px
+}
+.catalog-spec {
+    border-top:1px solid #384552;
+    padding-top:12px;
+    margin-top:18px;
+    color:#82dce9;
+    font-size:11px;
+    font-weight:700
+}
+.catalog-bottom {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:6px;
+    margin-top:18px
+}
+.catalog-bottom strong {
+    font-size:19px;
+    font-weight:700;
+    white-space:nowrap
+}
+.catalog-bottom button {
+    border:0;
+    background:none;
+    color:#00d2ff;
+    font-size:12px;
+    font-weight:700;
+    cursor:pointer
+}
+.catalog-bottom button:hover {
+    text-decoration:underline
+}
+.catalog-empty {
+    text-align:center;
+    padding:65px 20px;
+    border:1px dashed #3b4956;
+    border-radius:8px
+}
+.catalog-empty[hidden] {
+    display:none
+}
+.catalog-empty p {
+    color:#9caaba;
+    margin:12px 0 23px
+}
+.catalog-empty button {
+    width:auto
+}
+.catalog-help {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+    margin-top:80px;
+    padding:35px;
+    background:linear-gradient(105deg,#1b323d,#1e2835);
+    border:1px solid #315061;
+    border-radius:10px
+}
+.catalog-help h2 {
+    font-size:26px;
+    font-weight:500;
+    margin:8px 0
+}
+.catalog-help p:not(.catalog-overline) {
+    color:#aabbca;
+    font-size:13px
+}
+.catalog-overline {
+    color:#00d2ff;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:1.4px
+}
+.catalog-footer {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:15px;
+    background:#10151d;
+    padding:30px max(24px,calc((100% - 1296px)/2));
+    color:#8293a6;
+    font-size:12px
+}
+.catalog-footer a {
+    color:#bfe4e8;
+    text-decoration:none
+}
+.catalog-dialog-price {
+    font-size:18px!important;
+    font-weight:700;
+    color:#fff!important
+}
+@media(max-width:1150px) {
+    .catalog-grid {
+        grid-template-columns:repeat(2,minmax(0,1fr))
+    }
+    header {
+        padding:22px 24px
+    }
+    .main-nav {
+        gap:14px
+    }
+}
+@media(max-width:820px) {
+    .catalog-layout {
+        grid-template-columns:1fr
+    }
+    .catalog-sidebar {
+        position:static
+    }
+    .catalog-sidebar fieldset:first-of-type {
+        display:grid;
+        grid-template-columns:repeat(2,1fr)
+    }
+    .catalog-sidebar fieldset:first-of-type legend {
+        grid-column:1/-1
+    }
+    .catalog-main {
+        padding-left:20px;
+        padding-right:20px
+    }
+    .catalog-intro {
+        padding-top:50px
+    }
+    .main-nav {
+        flex-wrap:wrap;
+        gap:10px
+    }
+    .catalog-results-info {
+        flex-wrap:wrap
+    }
+}
+@media(max-width:580px) {
+    header {
+        flex-wrap:wrap;
+        gap:14px
+    }
+    .main-nav {
+        order:3;
+        width:100%;
+        justify-content:space-between;
+        font-size:12px
+    }
+    .cta-button {
+        min-width:0;
+        min-height:40px;
+        padding:0 12px;
+        font-size:12px
+    }
+    .catalog-grid {
+        grid-template-columns:1fr
+    }
+    .catalog-tools {
+        flex-direction:column;
+        align-items:stretch
+    }
+    .catalog-sort {
+        justify-content:space-between
+    }
+    .catalog-sort select {
+        flex:1
+    }
+    .catalog-help {
+        align-items:flex-start;
+        flex-direction:column;
+        padding:24px
+    }
+    .catalog-intro h1 {
+        letter-spacing:-.8px
+    }
+    .catalog-sidebar {
+        padding:18px
+    }
+}

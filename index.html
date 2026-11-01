@@ -93,7 +93,7 @@
           <div class="product-title"><h3>Alaplapok</h3></div>
           <p>Stabil tápellátás, fejlett csatlakozás és hosszú távú bővíthetőség.</p>
           <div class="product-tags"><span>DDR5</span><span>PCIE 5.0</span></div>
-          <a href="termekek.html">Részletek&nbsp; →</a>
+          <button type="button" class="product-details-trigger" onclick="megnyitas('termek1')" aria-haspopup="dialog" aria-label="Alaplapok részleteinek megnyitása">Részletek&nbsp; →</button>
         </div>
       </article>
       <article class="product-card">
@@ -102,7 +102,7 @@
           <div class="product-title"><h3>Processzorok</h3></div>
           <p>Nagy órajel, intelligens terheléskezelés és kimagasló energiahatékonyság.</p>
           <div class="product-tags"><span>16 MAG</span><span>5.4 GHZ</span></div>
-          <a href="termekek.html">Részletek&nbsp; →</a>
+          <button type="button" class="product-details-trigger" onclick="megnyitas('termek2')" aria-haspopup="dialog" aria-label="Processzorok részleteinek megnyitása">Részletek&nbsp; →</button>
         </div>
       </article>
       <article class="product-card">
@@ -111,7 +111,7 @@
           <div class="product-title"><h3>Tápegységek</h3></div>
           <p>Tiszta, csendes energiaellátás aktív védelemmel és moduláris kábelezéssel.</p>
           <div class="product-tags"><span>80+ PLATINUM</span><span>ATX 3.1</span></div>
-          <a href="termekek.html">Részletek&nbsp; →</a>
+          <button type="button" class="product-details-trigger" onclick="megnyitas('termek3')" aria-haspopup="dialog" aria-label="Tápegységek részleteinek megnyitása">Részletek&nbsp; →</button>
         </div>
       </article>
       <article class="product-card">
@@ -120,7 +120,7 @@
           <div class="product-title"><h3>Hűtés</h3></div>
           <p>Precíz hőmenedzsment alacsony zajszinttel, léghűtéses és folyadékos kivitelben.</p>
           <div class="product-tags"><span>32 DBA</span><span>360 MM</span></div>
-          <a href="termekek.html">Részletek&nbsp; →</a>
+          <button type="button" class="product-details-trigger" onclick="megnyitas('termek4')" aria-haspopup="dialog" aria-label="Hűtés részleteinek megnyitása">Részletek&nbsp; →</button>
         </div>
       </article>
     </div>
@@ -214,5 +214,71 @@
       </div>
     </footer>
 
+
+  <!-- Alaplapok felugró ablaka -->
+  <dialog id="termek1" class="product-dialog" aria-labelledby="termek1-cim">
+    <button type="button" class="dialog-close" onclick="bezaras('termek1')" aria-label="Bezárás">&times;</button>
+    <div class="dialog-visual"><img src="img/alaplapok.png" alt="Alaplapok"></div>
+    <div class="dialog-body">
+      <span class="dialog-category">CP / VECTOR</span>
+      <p class="dialog-eyebrow">STABIL ALAPOK. KORLÁTLAN LEHETŐSÉGEK.</p>
+      <h2 id="termek1-cim">Alaplapok</h2>
+      <h3>A teljesítmény a megfelelő alapoknál kezdődik.</h3>
+      <p>A CorePulse VECTOR alaplapcsaládot azoknak terveztük, akik hosszú távon is megbízható, nagy teljesítményű rendszert szeretnének építeni. A fejlett áramellátási megoldások, a DDR5 memóriatámogatás és a PCIe 5.0 csatlakozási lehetőségek biztosítják, hogy rendszered készen álljon a következő generációs hardverek fogadására.</p>
+      <p>Legyen szó professzionális munkavégzésről, tartalomgyártásról vagy intenzív játékról, a VECTOR sorozat stabil alapot nyújt minden kihíváshoz.</p>
+      <div class="dialog-tags"><span>DDR5</span><span>PCIe 5.0</span><span>Fejlett tápellátás</span><span>Bővíthetőség</span></div>
+      <a class="dialog-cta" href="ajanlatkeres.html">Ajánlatkérés <span aria-hidden="true">↗</span></a>
+    </div>
+  </dialog>
+
+  <!-- Processzorok felugró ablaka -->
+  <dialog id="termek2" class="product-dialog" aria-labelledby="termek2-cim">
+    <button type="button" class="dialog-close" onclick="bezaras('termek2')" aria-label="Bezárás">&times;</button>
+    <div class="dialog-visual"><img src="img/processzorok.png" alt="Processzorok"></div>
+    <div class="dialog-body">
+      <span class="dialog-category">CP / FORGE</span>
+      <p class="dialog-eyebrow">NYERS ERŐ. INTELLIGENS TELJESÍTMÉNY.</p>
+      <h2 id="termek2-cim">Processzorok</h2>
+      <h3>Amikor minden másodperc számít.</h3>
+      <p>A CorePulse FORGE processzorcsalád a kiemelkedő számítási teljesítményt intelligens energiagazdálkodással ötvözi. Az akár 16 magos kialakítás és az 5,4 GHz-es órajel lehetővé teszi az összetett feladatok gyors és hatékony feldolgozását.</p>
+      <p>A FORGE sorozat ideális választás játékosoknak, fejlesztőknek és kreatív szakembereknek, akik kompromisszumok nélkül szeretnék kihasználni rendszerük teljes potenciálját.</p>
+      <div class="dialog-tags"><span>Akár 16 mag</span><span>5,4 GHz</span><span>Intelligens terheléskezelés</span><span>Energiahatékonyság</span></div>
+      <a class="dialog-cta" href="ajanlatkeres.html">Ajánlatkérés <span aria-hidden="true">↗</span></a>
+    </div>
+  </dialog>
+
+  <!-- Tápegységek felugró ablaka -->
+  <dialog id="termek3" class="product-dialog" aria-labelledby="termek3-cim">
+    <button type="button" class="dialog-close" onclick="bezaras('termek3')" aria-label="Bezárás">&times;</button>
+    <div class="dialog-visual"><img src="img/tapegysegek.png" alt="Tápegységek"></div>
+    <div class="dialog-body">
+      <span class="dialog-category">CP / GRID</span>
+      <p class="dialog-eyebrow">MEGBÍZHATÓ ENERGIA. MAXIMÁLIS BIZTONSÁG.</p>
+      <h2 id="termek3-cim">Tápegységek</h2>
+      <h3>A stabil teljesítmény mögött stabil energia áll.</h3>
+      <p>A CorePulse GRID tápegységcsaládot a modern, nagy teljesítményű számítógépek energiaigényeihez terveztük. A 80 PLUS Platinum hatékonysági besorolás, az ATX 3.1 kompatibilitás és a fejlett védelmi megoldások segítik a biztonságos, hatékony működést.</p>
+      <p>A moduláris kábelezés rendezett gépházat és egyszerűbb szerelést tesz lehetővé, miközben a hatékony hűtési kialakítás hozzájárul a csendes üzemeléshez.</p>
+      <div class="dialog-tags"><span>80+ Platinum</span><span>ATX 3.1</span><span>Moduláris kábelezés</span><span>Elektromos védelem</span></div>
+      <a class="dialog-cta" href="ajanlatkeres.html">Ajánlatkérés <span aria-hidden="true">↗</span></a>
+    </div>
+  </dialog>
+
+  <!-- Hűtés felugró ablaka -->
+  <dialog id="termek4" class="product-dialog" aria-labelledby="termek4-cim">
+    <button type="button" class="dialog-close" onclick="bezaras('termek4')" aria-label="Bezárás">&times;</button>
+    <div class="dialog-visual"><img src="img/hutes.png" alt="Hűtés"></div>
+    <div class="dialog-body">
+      <span class="dialog-category">CP / FLOW</span>
+      <p class="dialog-eyebrow">HŰVÖS MŰKÖDÉS. HATÁRTALAN TELJESÍTMÉNY.</p>
+      <h2 id="termek4-cim">Hűtés</h2>
+      <h3>Tartsd kézben a hőmérsékletet, hozd ki a maximumot.</h3>
+      <p>A CorePulse FLOW hűtési rendszerek célja, hogy intenzív terhelés mellett is segítsék a hardverek optimális üzemi hőmérsékletének fenntartását. A precízen kialakított hőelvezetési megoldások és az optimalizált ventilátorvezérlés egyensúlyt teremtenek a hatékony hűtés és a halk működés között.</p>
+      <p>A léghűtéses és akár 360 mm-es folyadékhűtéses megoldások egyaránt alkalmasak modern gamer konfigurációk és professzionális munkaállomások építéséhez.</p>
+      <div class="dialog-tags"><span>Alacsony zajszint</span><span>Akár 360 mm</span><span>Optimalizált légáramlás</span><span>Hatékony hőelvezetés</span></div>
+      <a class="dialog-cta" href="ajanlatkeres.html">Ajánlatkérés <span aria-hidden="true">↗</span></a>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
 </body>
 </html>
