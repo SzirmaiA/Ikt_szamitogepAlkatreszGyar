@@ -1,0 +1,67 @@
+/* CorePulse – finom, visszafogott animációk.
+   Kizárólag ez a fájl tartalmazza az animációkat; a meglévő stílusok érintetlenek. */
+
+@keyframes cp-fade-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes cp-fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes cp-dialog-in {
+  from { opacity: 0; transform: translateY(14px) scale(.98); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Lapok közötti átmenet */
+body { animation: cp-fade-in .4s ease-out; }
+body.cp-leave { opacity: 0; transition: opacity .22s ease-in; }
+
+/* Navigáció: kék vonal csúszik be hover-re */
+nav a { position: relative; }
+nav a:not(.active)::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -4px; height: 2px;
+  background: #00d2ff; transform: scaleX(0); transform-origin: left center;
+  transition: transform .3s ease; pointer-events: none;
+}
+nav a:not(.active):hover::after { transform: scaleX(1); }
+
+/* Betöltéskor: a nyitó szekció elemei egymás után csúsznak be */
+.cp-intro {
+  animation: cp-fade-up .7s cubic-bezier(.2, .7, .2, 1) backwards;
+  animation-delay: calc(var(--cp-i, 0) * 90ms + 60ms);
+}
+.cp-intro-img { animation: cp-fade-in 1s ease-out backwards; animation-delay: .25s; }
+
+/* Görgetéskor: az elemek finoman megjelennek (a JS adja hozzá az osztályokat) */
+.cp-pending { opacity: 0; transform: translateY(18px); }
+.cp-in {
+  animation: cp-fade-up .6s cubic-bezier(.2, .7, .2, 1) backwards;
+  animation-delay: var(--cp-delay, 0ms);
+}
+
+/* Kártyák: enyhe emelkedés hover-re */
+.product-card, .value-card, .team-card, .steps .step {
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+.product-card:hover, .value-card:hover, .team-card:hover, .steps .step:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 210, 255, .45);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .28);
+}
+.product-card > img { transition: transform .5s ease; }
+.product-card:hover > img { transform: scale(1.04); }
+
+/* Gombok: apró visszajelzés */
+.btn-primary, .btn-secondary, .dialog-cta, .quote-button {
+  transition: background .3s ease, box-shadow .3s ease, transform .2s ease, border-color .2s ease;
+}
+.btn-primary:hover, .btn-secondary:hover, .dialog-cta:hover { transform: translateY(-2px); }
+
+/* Felugró termékablak */
+.product-dialog[open] { animation: cp-dialog-in .3s ease-out; }
+.product-dialog[open]::backdrop { animation: cp-fade-in .3s ease-out; }
+
+/* Mozgásérzékeny felhasználók: animációk kikapcsolva */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .cp-pending { opacity: 1 !important; transform: none !important; }
+}

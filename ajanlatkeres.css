@@ -1,0 +1,41 @@
+
+.quote-main{background:#0f141b;min-height:70vh;padding:65px max(24px,calc((100% - 1296px)/2)) 90px}
+.quote-intro{max-width:850px;padding:20px 0 42px}
+.quote-kicker{color:#00d2ff;font-size:10px;font-weight:800;letter-spacing:1.5px;margin:0 0 13px}
+.quote-intro h1{font-size:clamp(38px,5vw,60px);font-weight:500;line-height:1.08;letter-spacing:-1.6px;margin:0 0 20px}
+.quote-intro h1 em{font-style:normal;color:#00d2ff}
+.quote-intro>p:not(.quote-kicker){color:#aab5c4;line-height:1.8;max-width:720px}
+.quote-benefits{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:25px;color:#8bdde7;font-size:12px}
+.quote-layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:24px;align-items:start}
+.quote-form,.aside-card{background:#19212b;border:1px solid #303c4a;border-radius:9px;padding:30px}
+.form-heading{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:24px}
+.form-heading h2{font-size:23px;font-weight:500;margin:0}
+.form-heading>span,.optional{font-size:11px;color:#8293a6}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}
+.quote-form label{display:flex;flex-direction:column;gap:8px;color:#dce5ed;font-size:12px;font-weight:600}
+.quote-form input:not([type=checkbox]),.quote-form select,.quote-form textarea{width:100%;background:#10161e;border:1px solid #384758;border-radius:5px;padding:13px;color:#e6f1f6;font:inherit;font-size:13px;outline:none}
+.quote-form input:focus,.quote-form select:focus,.quote-form textarea:focus{border-color:#00d2ff;box-shadow:0 0 0 2px #00d2ff20}
+.quote-form input::placeholder,.quote-form textarea::placeholder{color:#657486}
+.form-divider{height:1px;background:#35404f;margin:30px 0}
+.component-options{display:flex;flex-wrap:wrap;gap:13px 20px;border:1px solid #35404f;border-radius:6px;padding:17px;margin:22px 0}
+.component-options legend{padding:0 8px;color:#dce5ed;font-size:12px;font-weight:700}
+.component-options label,.quote-form .consent{display:flex;flex-direction:row;align-items:center;gap:8px;color:#aebbc9;font-weight:400}
+.quote-form input[type=checkbox]{accent-color:#00c2d1;width:15px;height:15px}
+.quote-form .full-label{display:block;margin:20px 0}
+.full-label input,.full-label textarea{margin-top:9px}
+.quote-form textarea{resize:vertical;line-height:1.6}
+.quote-form .consent{font-size:11px;margin:20px 0}
+.quote-submit{width:100%;border:0;border-radius:5px;background:#00d2ff;color:#071116;padding:16px 20px;font-weight:800;cursor:pointer;transition:.2s}
+.quote-submit:hover{background:#18d1dc;box-shadow:0 0 18px #18d1dc55}
+.quote-submit span{margin-left:10px}
+.form-note,.form-status{font-size:11px;color:#8293a6;line-height:1.6;margin:13px 0 0}
+.form-status{color:#78e2eb}
+.quote-aside{display:grid;gap:18px}
+.aside-card{padding:25px}
+.aside-card h2{font-size:23px;font-weight:500;line-height:1.25;margin:0 0 13px}
+.aside-card p:not(.quote-kicker){color:#aab7c5;font-size:12px;line-height:1.7}
+.aside-card a{color:#00d2ff;text-decoration:none;font-size:12px}
+.aside-contact p{margin:0 0 16px}
+.aside-contact strong{color:#e7edf3}
+@media(max-width:900px){.quote-layout{grid-template-columns:1fr}.quote-aside{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.quote-main{padding:40px 18px 60px}.quote-form{padding:20px}.form-grid,.quote-aside{grid-template-columns:1fr}.form-heading{align-items:start;flex-direction:column}.quote-intro h1{letter-spacing:-.8px}}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450">
+    <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#1b2b39"/><stop offset="1" stop-color="#101720"/></linearGradient><radialGradient id="glow"><stop stop-color="#00c2d1" stop-opacity=".22"/><stop offset="1" stop-color="#00c2d1" stop-opacity="0"/></radialGradient></defs>
+    <rect width="600" height="450" fill="url(#bg)"/><circle cx="300" cy="220" r="260" fill="url(#glow)"/>
+    <g opacity=".22" stroke="#8293a6"><path d="M0 390H600M0 420H600M70 0V450M530 0V450"/></g>
+    <ellipse cx="300" cy="365" rx="205" ry="20" fill="#05090e" opacity=".6"/><rect x="150" y="245" width="300" height="100" rx="18" fill="#253342" stroke="#00c2d1" stroke-width="5"/>
+        <rect x="185" y="110" width="230" height="150" rx="15" fill="#1d2a38" stroke="#718195" stroke-width="5"/>
+        <circle cx="230" cy="185" r="43" fill="#101923" stroke="#00c2d1" stroke-width="5"/><circle cx="230" cy="185" r="27" fill="#2d4051" stroke="#a8bacb" stroke-width="3"/><circle cx="300" cy="185" r="43" fill="#101923" stroke="#00c2d1" stroke-width="5"/><circle cx="300" cy="185" r="27" fill="#2d4051" stroke="#a8bacb" stroke-width="3"/>
+        <path d="M175 270h250" stroke="#00c2d1" stroke-width="5"/>
+    <text x="300" y="415" text-anchor="middle" fill="#dce8f2" font-family="Arial" font-size="16" letter-spacing="4">COREPULSE / 11</text></svg>

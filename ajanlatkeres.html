@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajánlatkérés | CorePulse</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="katalogus.css">
+  <link rel="stylesheet" href="ajanlatkeres.css">
+<link rel="stylesheet" href="animations.css">
+</head>
+<body>
+<header>
+  <a class="logo catalog-logo" href="index.html"><div class="logo-icon"></div><div>CorePulse<span>ENGINEERED PERFORMANCE</span></div></a>
+  <nav class="main-nav" aria-label="Fő navigáció">
+    <a href="index.html">Főoldal</a><a href="termekek.html">Termékek</a><a href="rolunk.html">Rólunk</a><a href="gyartasiFolyamat.html">Gyártás</a><a href="kapcsolat.html">Kapcsolat</a>
+  </nav>
+  <a class="cta-button" href="ajanlatkeres.html" aria-current="page">Ajánlatkérés ↗</a>
+</header>
+<main class="quote-main">
+  <section class="quote-intro">
+    <p class="quote-kicker">COREPULSE / EGYEDI KONFIGURÁCIÓ</p>
+    <h1>Építsük meg együtt<br><em>a megfelelő rendszert.</em></h1>
+    <p>Írd meg, mire van szükséged, és szakértőink segítenek kiválasztani a megfelelő komponenseket. Minél több részletet adsz meg, annál pontosabb ajánlatot tudunk összeállítani.</p>
+    <div class="quote-benefits"><span>✓ Személyre szabott javaslat</span><span>✓ Kompatibilitás-ellenőrzés</span><span>✓ Részletes árajánlat</span></div>
+  </section>
+  <div class="quote-layout">
+    <form class="quote-form" id="quoteForm">
+      <div class="form-heading"><div><p class="quote-kicker">01 / KAPCSOLAT</p><h2>Kapcsolati adatok</h2></div><span>Kötelező mezők *</span></div>
+      <div class="form-grid">
+        <label>Teljes név *<input name="name" autocomplete="name" required placeholder="Pl. Kovács Péter"></label>
+        <label>E-mail cím *<input name="email" type="email" autocomplete="email" required placeholder="nev@email.hu"></label>
+        <label>Telefonszám<input name="phone" type="tel" autocomplete="tel" placeholder="+36 30 123 4567"></label>
+        <label>Cégnév <span class="optional">(opcionális)</span><input name="company" autocomplete="organization" placeholder="Cég neve"></label>
+      </div>
+      <div class="form-divider"></div>
+      <div class="form-heading"><div><p class="quote-kicker">02 / IGÉNYEK</p><h2>Milyen konfigurációra van szükséged?</h2></div></div>
+      <div class="form-grid">
+        <label>Ajánlat típusa *
+          <select name="type" required><option value="">Válassz…</option><option>Teljes számítógép-konfiguráció</option><option>Alkatrészek / komponensek</option><option>Nagyobb mennyiségű / céges rendelés</option><option>Egyedi gyártás vagy együttműködés</option></select>
+        </label>
+        <label>Felhasználási terület *
+          <select name="usage" required><option value="">Válassz…</option><option>Gaming</option><option>Munkaállomás / professzionális munka</option><option>Tartalomgyártás</option><option>Irodai / általános használat</option><option>Egyéb</option></select>
+        </label>
+        <label>Tervezett költségkeret
+          <select name="budget"><option value="">Még nem tudom</option><option>100 000 – 250 000 Ft</option><option>250 000 – 400 000 Ft</option><option>400 000 – 600 000 Ft</option><option>600 000 – 900 000 Ft</option><option>900 000 Ft felett</option></select>
+        </label>
+        <label>Darabszám<input name="quantity" type="number" min="1" value="1"></label>
+      </div>
+      <fieldset class="component-options"><legend>Érdeklődöm az alábbi komponensek iránt</legend>
+        <label><input type="checkbox" name="components" value="Alaplapok"> Alaplapok</label>
+        <label><input type="checkbox" name="components" value="Processzorok"> Processzorok</label>
+        <label><input type="checkbox" name="components" value="Tápegységek"> Tápegységek</label>
+        <label><input type="checkbox" name="components" value="Hűtés"> Hűtés</label>
+        <label><input type="checkbox" name="components" value="Komplett rendszer"> Komplett rendszer</label>
+      </fieldset>
+      <label class="full-label">Termék vagy konfiguráció neve <span class="optional">(ha konkrét termékről érdeklődsz)</span><input id="productField" name="product" placeholder="Pl. VECTOR X870, GRID 850 GOLD"></label>
+      <label class="full-label">További részletek *<textarea name="details" rows="6" required placeholder="Írd le az elképzeléseidet, a szükséges teljesítményt, kompatibilitási igényeket vagy bármilyen fontos részletet…"></textarea></label>
+      <label class="consent"><input type="checkbox" required> Elolvastam és elfogadom az adatkezelési tájékoztatót. *</label>
+      <button class="quote-submit" type="submit">Ajánlatkérés elküldése <span>↗</span></button>
+      <p class="form-note">A beküldéshez e-mail alkalmazás nyílik meg az előre kitöltött ajánlatkéréssel.</p>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+    <aside class="quote-aside">
+      <div class="aside-card"><p class="quote-kicker">SEGÍTÜNK A VÁLASZTÁSBAN</p><h2>Nem tudod pontosan, mire van szükséged?</h2><p>Semmi gond. Írd le, mire használnád a gépet, és mi segítünk megtalálni az ideális összeállítást.</p><a href="mailto:hello@corepulse.hu">hello@corepulse.hu ↗</a></div>
+      <div class="aside-card aside-contact"><p class="quote-kicker">KÖZVETLEN ELÉRHETŐSÉG</p><p><strong>E-mail</strong><br><a href="mailto:hello@corepulse.hu">hello@corepulse.hu</a></p><p><strong>Telefon</strong><br><a href="tel:+3615550240">+36 1 555 0240</a></p><p><strong>Ügyfélszolgálat</strong><br>H–P 8:30–17:00</p></div>
+    </aside>
+  </div>
+</main>
+<footer class="site-footer">
+      <div class="container footer-main">
+
+        <div class="footer-brand">
+<a href="index.html" class="logo footer-logo">
+    <div class="logo-icon"></div>
+    <div>
+        CorePulse
+        <span>ENGINEERED PERFORMANCE</span>
+    </div>
+</a>
+
+          <p class="footer-description">
+            Nagy teljesítményű számítógép-komponensek
+            mérnöki pontossággal, európai gyártással és valós
+            műszaki támogatással.
+          </p>
+
+          <div class="footer-socials" aria-label="Közösségi média">
+            <a href="#" aria-label="LinkedIn" style="text-decoration: none;">in</a>
+            <a href="https://www.youtube.com/@KriszhAdvice" aria-label="YouTube" target="_blank" style="text-decoration: none;">▶</a>
+            <a href="https://www.instagram.com/kriszhadvice/" target="_blank" aria-label="Instagram" style="text-decoration: none;">◎</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>NAVIGÁCIÓ</h3>
+          <nav aria-label="Lábléc navigáció">
+            <ul style="list-style: none;">
+              <li><a href="index.html">Főoldal</a></li>
+              <li><a href="termekek.html">Termékek</a></li>
+              <li><a href="rolunk.html">Rólunk</a></li>            
+              <li><a href="gyartasiFolyamat.html">Gyártás</a></li>
+              <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer-column">
+          <h3>JOGI INFORMÁCIÓ</h3>
+          <ul style="text-decoration: none; list-style: none;">
+            <li><a href="#"style="text-decoration: none;">Adatkezelési tájékoztató</a></li>
+            <li><a href="#"style="text-decoration: none;">Jogi nyilatkozat</a></li>
+            <li><a href="#"style="text-decoration: none;">Cookie beállítások</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column footer-contact">
+          <h3>KAPCSOLAT</h3>
+
+          <ul>
+            <li>
+              <span class="footer-contact-icon" aria-hidden="true" id="footericon">✉</span>
+              <a href="mailto:hello@corepulse.hu" style="text-decoration: none;">hello@corepulse.hu</a>
+            </li>
+            <li>
+              <span class="footer-contact-icon" aria-hidden="true" id="footericon">☎</span>
+              <a href="tel:+3615550240" style="text-decoration: none;"> +36 1 555 0240</a>
+            </li>
+            <li>
+              <span class="footer-contact-icon" aria-hidden="true" id="footericon">🏳</span>
+              <span>1117 Budapest, Neumann János utca 1.</span>
+            </li>
+          </ul>
+<br>
+          <p class="footer-hours">
+            <span aria-hidden="true" style="font-size: 20px;">●</span>
+            H-P 8:30–17:00
+          </p>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© 2026 CorePulse Components Kft. Minden jog fenntartva.</p>
+
+        <p class="footer-signature">
+          <span></span>
+          DESIGNED TO ENDURE
+        </p>
+      </div>
+    </footer>
+<script>
+const productParam = new URLSearchParams(location.search).get('termek');
+if (productParam) document.getElementById('productField').value = productParam;
+document.getElementById('quoteForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const data = new FormData(this);
+  const components = data.getAll('components').join(', ') || 'Nincs megadva';
+  const body = [
+    'Új CorePulse ajánlatkérés', '',
+    'Név: ' + data.get('name'),
+    'E-mail: ' + data.get('email'),
+    'Telefon: ' + (data.get('phone') || 'Nincs megadva'),
+    'Cég: ' + (data.get('company') || 'Nincs megadva'), '',
+    'Ajánlat típusa: ' + data.get('type'),
+    'Felhasználás: ' + data.get('usage'),
+    'Költségkeret: ' + (data.get('budget') || 'Nincs megadva'),
+    'Darabszám: ' + data.get('quantity'),
+    'Komponensek: ' + components,
+    'Konkrét termék: ' + (data.get('product') || 'Nincs megadva'), '',
+    'Részletek:', data.get('details')
+  ].join('\n');
+  const mailto = 'mailto:hello@corepulse.hu?subject=' + encodeURIComponent('CorePulse ajánlatkérés - ' + data.get('name')) + '&body=' + encodeURIComponent(body);
+  document.getElementById('formStatus').textContent = 'Megnyitjuk az e-mail alkalmazásodat az ajánlatkérés adataival.';
+  window.location.href = mailto;
+});
+</script>
+<script src="animations.js"></script>
+</body></html>
