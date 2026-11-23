@@ -1,0 +1,7 @@
+name = "corepulse-contact-api"
+main = "worker.js"
+compatibility_date = "2026-11-01"
+
+[vars]
+ALLOWED_ORIGIN = "https://SZIRMAIA.github.io"
+CONTACTS_REPO = "SZIRMAIA/PRIVAT-KAPCSOLATOK"
