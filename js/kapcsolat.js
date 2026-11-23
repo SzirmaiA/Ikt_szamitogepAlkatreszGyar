@@ -19,9 +19,6 @@
     currentStep = index;
     steps.forEach((step, i) => {
       step.hidden = i !== index;
-      step.querySelectorAll("input, select, textarea").forEach(field => {
-        if (field.name !== "website") field.disabled = i !== index;
-      });
     });
     progress.forEach((item, i) => item.classList.toggle("active", i <= index));
     counter.textContent = index === 0 ? "01 / 02" : "02 / 02";

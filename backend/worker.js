@@ -13,7 +13,7 @@ function send(data, status, origin) {
 }
 
 function decodeContent(value) {
-  const binary = atob(value.replace(/\\s/g, ""));
+  const binary = atob(value.replace(/\s/g, ""));
   return new TextDecoder().decode(Uint8Array.from(binary, char => char.charCodeAt(0)));
 }
 
@@ -32,7 +32,7 @@ function clean(value, max) {
 
 async function requestGithub(env, method, body) {
   const repo = env.CONTACTS_REPO || "";
-  if (!/^[a-zA-Z0-9_.-]+\\/[a-zA-Z0-9_.-]+$/.test(repo)) throw new Error("Hibás CONTACTS_REPO beállítás");
+  if (!/^[a-zA-Z0-9_.-]+\/[a-zA-Z0-9_.-]+$/.test(repo)) throw new Error("Hibás CONTACTS_REPO beállítás");
   const path = "data/kapcsolatok.json";
   const url = "https://api.github.com/repos/" + repo + "/contents/" + path;
   return fetch(url, {
@@ -92,7 +92,7 @@ export default {
     const message = clean(payload.message, 3000);
     if (name.length < 2 || name.length > 100 ||
         company.length > 120 ||
-        !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email) || email.length > 254 ||
+        !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 254 ||
         phone.length > 40 ||
         !allowedSubjects.includes(subject) ||
         message.length < 5 || message.length > 3000 ||
