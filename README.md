@@ -1,10 +1,12 @@
 # CorePulse – Számítógép-alkatrészgyár
 
-Iskolai IKT-projekt: egy számítógép-alkatrészeket gyártó vállalat bemutatkozó weboldala.
+KKSZKI Iskolai IKT-projekt: egy számítógép-alkatrészeket gyártó vállalat bemutatkozó weboldala.
 
-## Indítás
 
-Nyisd meg a gyökérmappában található `index.html` fájlt egy böngészőben. A projekt HTML-, CSS- és JavaScript-fájlokból áll, nincs szükség külön telepítésre.
+## Linkek
+- **Weboldal Linkje:** https://szirmaia.github.io/Ikt_szamitogepAlkatreszGyar/index.html
+- **Figma Linkje:** https://www.figma.com/proto/XC5ws4o1oM5Aud5Tyn6gy3/Untitled?node-id=4-3684
+- **Trello Linkje:** https://trello.com/b/Jaxh1N3f/projekt-munka
 
 ## Mappaszerkezet
 
