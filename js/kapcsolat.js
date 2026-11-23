@@ -51,6 +51,15 @@
 
   form.addEventListener("submit", async event => {
     event.preventDefault();
+    if (currentStep === 0) {
+      if (validateStep(0)) showStep(1);
+      return;
+    }
+    if (!validateStep(0)) {
+      showStep(0);
+      validateStep(0);
+      return;
+    }
     if (!validateStep(1)) return;
     if (!endpoint) {
       showStatus("A beküldés még nincs beállítva. A GitHubra mentéshez előbb csatlakoztatni kell a biztonságos API-t.");
