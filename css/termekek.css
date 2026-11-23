@@ -413,3 +413,16 @@
         padding:18px
     }
 }
+
+.site-footer .footer-socials a,
+.site-footer .footer-column a {
+    text-decoration: none;
+}
+
+.site-footer .footer-column ul {
+    list-style: none;
+}
+
+.site-footer .footer-hours span[aria-hidden="true"] {
+    font-size: 20px;
+}

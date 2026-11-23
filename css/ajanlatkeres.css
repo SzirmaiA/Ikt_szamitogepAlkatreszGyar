@@ -39,3 +39,23 @@
 .aside-contact strong{color:#e7edf3}
 @media(max-width:900px){.quote-layout{grid-template-columns:1fr}.quote-aside{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.quote-main{padding:40px 18px 60px}.quote-form{padding:20px}.form-grid,.quote-aside{grid-template-columns:1fr}.form-heading{align-items:start;flex-direction:column}.quote-intro h1{letter-spacing:-.8px}}
+
+.catalog-logo {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 1150px) {
+    header { padding: 22px 24px; }
+    .main-nav { gap: 14px; }
+}
+
+@media (max-width: 820px) {
+    .main-nav { flex-wrap: wrap; gap: 10px; }
+}
+
+@media (max-width: 580px) {
+    header { flex-wrap: wrap; gap: 14px; }
+    .main-nav { order: 3; width: 100%; justify-content: space-between; font-size: 12px; }
+    .cta-button { min-width: 0; min-height: 40px; padding: 0 12px; font-size: 12px; }
+}

@@ -22,7 +22,7 @@ Ikt_szamitogepAlkatreszGyar/
 │   ├── animations.css
 │   ├── gyartasiFolyamat.css
 │   ├── kapcsolat.css
-│   ├── katalogus.css
+│   ├── termekek.css
 │   ├── rolunk.css
 │   └── style.css
 ├── js/
@@ -40,7 +40,7 @@ Ikt_szamitogepAlkatreszGyar/
 
 - **index.html:** főoldal, a projekt belépési pontja.
 - **pages/:** az összes további HTML-oldal.
-- **css/:** közös, animációs és oldalspecifikus stíluslapok.
+- **css/:** közös, animációs és oldalspecifikus stíluslapok. A Termékek oldal saját stílusai a `termekek.css` fájlban vannak.
 - **js/:** JavaScript-funkciók és animációk.
 - **img/:** képek, a `products/` és `about/` mappákban külön csoportosítva.
 
