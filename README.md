@@ -29,12 +29,17 @@ Ikt_szamitogepAlkatreszGyar/
 │   └── style.css
 ├── js/
 │   ├── animations.js
+│   ├── kapcsolat.js
 │   ├── katalogus.js
 │   └── script.js
 ├── img/
 │   ├── about/
 │   ├── products/
 │   └── egyéb képek
+├── backend/
+│   ├── worker.js
+│   ├── wrangler.toml
+│   └── README.md
 └── README.md
 ```
 
@@ -46,4 +51,4 @@ Ikt_szamitogepAlkatreszGyar/
 - **js/:** JavaScript-funkciók és animációk.
 - **img/:** képek, a `products/` és `about/` mappákban külön csoportosítva.
 
-A fájlok áthelyezése után a HTML-hivatkozások relatív útvonalai frissültek. A `pages/kapcsolat.html` és `css/kapcsolat.css` az eredeti projektben is üres; a későbbi munkához megmaradtak.
+A fájlok áthelyezése után a HTML-hivatkozások relatív útvonalai frissültek. A `pages/kapcsolat.html` kétlépéses kapcsolatfelvételi űrlap. A JSON-ba mentéshez egy külön, biztonságosan telepített API szükséges; a `backend/README.md` tartalmazza a beüzemelést.
